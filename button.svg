@@ -1,0 +1,45 @@
+<svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<style>
+			div {
+				align-items: center;
+				background: #ffe;
+				display: flex;
+				flex-direction: row;
+				height: 100%;
+				justify-content: center;
+				position: absolute;
+				width: 100%;
+			}
+
+			button {
+				align-items: center;
+				animation: sequence 3s infinite;
+				background: #f00;
+				border: 0;
+				border-radius: 25px;
+				color: #fff;
+				cursor: pointer;
+				display: inline-flex;
+				justify-content: center;
+				font-size: 18px;
+				height: 50px;
+				padding: 0 50px;
+			}
+
+			@keyframes sequence {
+				0%, 10%, 40%, 100% {
+					background: red;
+				}
+
+				25% {
+					background: darkred;
+				}
+			}
+			</style>
+
+			<button>PUSH ME</button>
+		</div>
+	</foreignObject>
+</svg>

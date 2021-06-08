@@ -1,0 +1,67 @@
+<svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<style>
+			div {
+				align-items: center;
+				background: #ffe;
+				display: flex;
+				flex-direction: row;
+				height: 100%;
+				justify-content: space-between;
+				position: absolute;
+				width: 100%;
+			}
+
+			p {
+				color: #2b5a77;
+				font-family: Arial;
+				font-size: 18px;
+				font-weight: 700;
+				padding: 10px 20px;
+				position: relative;
+				width: 300px;
+				z-index: 2;
+			}
+
+			.loading {
+				background-color: #999;
+				border-radius: 4px;
+				display: block;
+				height: 20px;
+				margin-top: 20px;
+				overflow: hidden;
+				position: relative;
+				width: 560px;
+			}
+
+			.loading__progress {
+				animation: sequence 5s linear infinite;
+				background: #2b5a77;
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+			}
+
+			@keyframes sequence {
+				from {
+					left: -600px;
+				}
+
+				to {
+					left: 600px;
+				}
+			}
+			</style>
+
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+				<span class="loading"><span class="loading__progress"></span></span>
+			</p>
+
+		</div>
+	</foreignObject>
+</svg>
