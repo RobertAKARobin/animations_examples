@@ -1,0 +1,87 @@
+<svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div class="body" xmlns="http://www.w3.org/1999/xhtml">
+			<style>
+				.body{
+					background-color:#aef;
+					height: 100%;
+					overflow:hidden;
+					width: 100%;
+				}
+
+				.cloud{
+					animation-direction:normal;
+					animation-iteration-count:infinite;
+					animation-name:fly;
+					animation-timing-function:linear;
+					background-color:#fff;
+					border-radius:50%;
+					position:absolute;
+				}
+
+				.cloud.nine{
+					animation-duration:5s;
+					height:20px;
+					opacity:0.5;
+					top:20px;
+					width:60px;
+					z-index:1;
+				}
+
+				.cloud.ten{
+					animation-delay: -1s;
+					animation-duration:4s;
+					height:40px;
+					opacity:0.7;
+					top:120px;
+					width:200px;
+					z-index:10;
+				}
+
+				.cloud.eleven{
+					animation-delay: -2s;
+					animation-duration:3s;
+					height:80px;
+					opacity:0.9;
+					top:180px;
+					width:300px;
+					z-index:100;
+				}
+
+				@keyframes fly{
+					from{
+						left:101%;
+					}
+					to{
+						left:-101%;
+					}
+				}
+
+				.text{
+					animation:float 2s ease-in-out alternate infinite;
+					color:#99a;
+					font-family:cursive;
+					font-size:150px;
+					position:absolute;
+					text-align:center;
+					width: 100%;
+					z-index:50;
+				}
+
+				@keyframes float{
+					from{
+						top:80px;
+					}
+					to{
+						top:120px;
+					}
+				}
+			</style>
+
+			<div class="cloud nine"></div>
+			<div class="cloud ten"></div>
+			<div class="cloud eleven"></div>
+			<div class="text">ˇ</div>
+		</div>
+	</foreignObject>
+</svg>
